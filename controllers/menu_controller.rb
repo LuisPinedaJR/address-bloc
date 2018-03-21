@@ -48,7 +48,6 @@ class MenuController
             main_menu
           when 7
             puts "Good-Bye!"
-
             exit(0)
           else
             system "clear"
@@ -174,7 +173,7 @@ def edit(entry)
 end
 
 def delete_entry(entry)
-  address_book.entries.delete(entry))
+  address_book.entries.delete(entry)
   puts "#{entry.name} has been deleted"
 end
 
@@ -204,3 +203,4 @@ def search_submenu(entry)
       search_submenu(entry)
     end
   end
+end 
