@@ -43,7 +43,7 @@ class MenuController
             main_menu
           when 6
             system "clear"
-
+            @address_book.nuke
             puts "All entries have been terminated!"
             main_menu
           when 7
