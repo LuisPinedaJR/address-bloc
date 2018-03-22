@@ -14,7 +14,7 @@ class MenuController
      puts "3 - Search for entry"
      puts "4 - Import entries from a CSV"
      puts "5 - View Entry n"
-     puts "6- Nuke all entries"
+     puts "6 - Nuke all entries"
      puts "7 - Exit"
      print "Enter your selection: "
 
@@ -92,7 +92,7 @@ class MenuController
    print "Email: "
    email = gets.chomp
 
-   address_book.add_entry(name, phone, email)
+   address_book.add_entry(name, phone_number, email)
 
    system "clear"
    puts "New entry created"
@@ -203,4 +203,4 @@ def search_submenu(entry)
       search_submenu(entry)
     end
   end
-end 
+end
